@@ -7,7 +7,7 @@ import {QuizModels} from '../models/quiz.models';
 })
 export class QuizService {
 
-  quiz: QuizModels[] = [];
+  quiz: QuizModels[] = [new QuizModels(1, 'Quiz 1', '')];
   quizSubject = new Subject<QuizModels[]>();
 
   constructor() { }
