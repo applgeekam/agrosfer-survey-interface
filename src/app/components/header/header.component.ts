@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  logoPath = 'assets/logo-agrosfer.png';
   constructor() { }
 
   ngOnInit(): void {

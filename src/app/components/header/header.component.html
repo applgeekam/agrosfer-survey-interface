@@ -1,1 +1,31 @@
-<p>header works!</p>
+
+<header class="navbar navbar-expand flex-column flex-md-row sw-navbar">
+
+  <button type="button" id="sidebarCollapse"  class="btn btn-link btn-menu">
+    <span class="oi oi-menu"></span>
+  </button>
+
+
+  <div class="logo">
+    <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Swastika I/O">
+      <img [src]="logoPath" alt="AgroSfer Logo" width="35px">
+    </a>
+
+    <button type="button" class="btn btn-link">
+      <span class="oi oi-grid-three-up"></span>
+    </button>
+  </div>
+
+  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+    <li class="nav-item">
+      <span class="material-icons not-icon">notifications</span>
+    </li>
+  </ul>
+
+  <div class="user">
+    <span>John Doe</span>
+
+    <img class="rounded-circle sw-avatar user-logo" alt="200x200" src="https://i.pravatar.cc/300" data-holder-rendered="true"
+         style="width: 36px; height: 36px;">
+  </div>
+</header>
