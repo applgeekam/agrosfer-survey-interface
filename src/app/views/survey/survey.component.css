@@ -10,6 +10,8 @@ main .sw-title {
 
 .sw-sidebar.active {
   min-width: 86px !important;
+  position: unset;
+  height: auto;
 }
 
 .flex-xl-nowrap {

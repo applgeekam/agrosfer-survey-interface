@@ -14,7 +14,9 @@
   color: #72777a91 !important;
 }
 
-
+#sidebar {
+  height: 100%;
+}
 
 .sw-toc-item.active .sw-toc-link, .sw-toc-item.active .material-icons {
   color: #72777a !important;
@@ -34,7 +36,7 @@
 
 .copyright {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   font-size: 0.7em;
   margin-left: 5px;
   font-family: 'Noto Sans JP', sans-serif;

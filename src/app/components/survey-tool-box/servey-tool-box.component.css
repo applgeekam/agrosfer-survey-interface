@@ -11,6 +11,7 @@
   flex-direction: column;
   cursor: pointer;
   min-width: 90px;
+  z-index: 10000;
 }
 
 .box-item span {
@@ -20,14 +21,17 @@
 .tool-name {
   font-size: .8em;
   color: #72777ac7;
+  z-index: 100000;
 }
 
 .material-icons {
   margin-bottom: 10px;
+  color: #606060;
 }
 
 .box-item.active {
   border: 1px solid #5DB03A;
+  background-color: rgba(114, 119, 122, 0.25);
 }
 
 .box-item.active .material-icons, .box-item.active span {

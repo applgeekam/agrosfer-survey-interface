@@ -1,0 +1,54 @@
+
+.quiz {
+  background-color: white;
+  border-radius: 6px;
+}
+
+.options {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+.options div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.options div span {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.quiz-el {
+  margin: 0 0 15px;
+}
+
+.options .add, .options .del {
+  color: #666666;
+}
+
+.options .ctn, .options .set  {
+  color: #63AF35;
+}
+
+.quiz {
+  padding: 10px;
+}
+
+.quiz .title {
+  padding-bottom: 10px;
+}
+
+.quiz .content {
+  border-top: 2px solid #72777ac7;
+  padding-top: 15px;
+  color: #72777aed;
+}
+
+.quiz-el.first .quiz .content {
+  min-height: 400px;
+}
