@@ -39,6 +39,11 @@
    overflow-y: scroll;
  }
 
+ .quiz-el {
+   margin: 0 0 15px;
+ }
+
+
  /* width */
  .builder-body::-webkit-scrollbar {
    width: 3px;

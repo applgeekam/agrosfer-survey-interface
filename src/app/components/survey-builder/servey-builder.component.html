@@ -10,7 +10,6 @@
     </div>
   </div>
   <div class="row builder-body">
-    <app-quiz></app-quiz>
-    <app-quiz></app-quiz>
+    <app-quiz class="row quiz-el" *ngFor="let item of quiz; let i = index;" [item]="item" [class.first-quiz]="i === 0" ></app-quiz>
   </div>
 </div>

@@ -21,17 +21,6 @@ export class SurveyBuilderComponent implements OnInit, OnDestroy {
     this.quizService.emitQuiz();
   }
 
-  addQuiz(): void {
-    const id = this.quiz[this.quiz.length - 1].id + 1;
-    const quiz = new QuizModels(id, 'Quiz ' + id, '');
-    this.quizService.addQuiz(quiz);
-  }
-  removeQuiz(survey: QuizModels): void {
-    const quizToRemove = this.quiz.findIndex((item: QuizModels) => {
-      return item === survey;
-    });
-    this.quizService.removeQuiz(quizToRemove);
-  }
   ngOnDestroy(): void {
     this.quizSubscription.unsubscribe();
   }

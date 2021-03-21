@@ -7,23 +7,32 @@ import {QuizModels} from '../models/quiz.models';
 })
 export class QuizService {
 
-  quiz: QuizModels[] = [new QuizModels(1, 'Quiz 1', '')];
+  all: QuizModels[] = [new QuizModels(0, 'Quiz', '')];
   quizSubject = new Subject<QuizModels[]>();
 
   constructor() { }
 
   emitQuiz(): any {
-    this.quizSubject.next(this.quiz);
+    this.quizSubject.next(this.all.slice());
   }
 
-  addQuiz(quiz: QuizModels): void {
-    this.quiz.push(quiz);
+  addQuiz(content: string): void {
+    const id = this.all[this.all.length - 1].id + 1;
+    const quiz = new QuizModels(id, 'Quiz ' + id, content);
+    this.all.push(quiz);
     this.emitQuiz();
   }
 
-  removeQuiz(id: number): void {
-    this.quiz.slice(id, 1);
+  removeQuiz(quiz: QuizModels): void {
+    const quizToRemove = this.all.findIndex((item: QuizModels) => {
+      return item === quiz;
+    });
+    this.all.splice(quizToRemove, 1);
     this.emitQuiz();
+  }
+
+  getSize(): number {
+    return this.all.length;
   }
 
 }

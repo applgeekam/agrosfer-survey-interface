@@ -10,7 +10,7 @@
         $(".draggable").draggable({
           cursor: "move",
           cursorAt: { top: 56, left: 56 },
-          connectToSortable: ".sortable",
+          connectToSortable: ".content",
           helper: "clone",
           revert: "invalid",
           start: function( event, ui ) {
