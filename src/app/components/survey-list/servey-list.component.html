@@ -1,1 +1,24 @@
-<p>servey-list works!</p>
+<div class="card">
+  <div class="card-header">
+    Featured
+    <button type="button" class="btn btn-link move">
+      <span class="material-icons">add_circle</span>
+    </button>
+  </div>
+  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-addon material-icons">search</span>
+          <input type="text" class="form-control" placeholder="Rechercher" aria-label="Search">
+        </div>
+      </div>
+      <div class="list-survey">
+        <div class="list-item-survey">
+          <app-survey-list-item></app-survey-list-item>
+          <app-survey-list-item></app-survey-list-item>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

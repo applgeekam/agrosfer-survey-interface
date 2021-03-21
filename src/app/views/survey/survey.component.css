@@ -1,0 +1,22 @@
+main {
+  width: 100%;
+}
+
+main .sw-title {
+  text-decoration: underline;
+  font-size: x-large;
+  font-weight: 450;
+}
+
+.sw-sidebar.active {
+  min-width: 86px !important;
+}
+
+.flex-xl-nowrap {
+  flex-wrap: inherit !important;
+}
+
+
+
+
+

@@ -12,6 +12,7 @@ import { QuizComponent } from './components/quiz/quiz.component';
 import {SurveyService} from './service/survey.service';
 import {QuizService} from './service/quiz.service';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { SurveyListItemComponent } from './components/survey-list-item/survey-list-item.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     SurveyListComponent,
     ServeyToolBoxComponent,
     SurveyBuilderComponent,
-    QuizComponent
+    QuizComponent,
+    SurveyListItemComponent
   ],
   imports: [
     BrowserModule,
