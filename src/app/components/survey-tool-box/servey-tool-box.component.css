@@ -1,0 +1,44 @@
+
+.box-item {
+  height: 80px;
+  background-color: rgb(16 16 33 / 6%);
+  border-radius: 3px;
+  margin: 5px 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  min-width: 90px;
+}
+
+.box-item span {
+  display: block;
+}
+
+.tool-name {
+  font-size: .8em;
+  color: #72777ac7;
+}
+
+.material-icons {
+  margin-bottom: 10px;
+}
+
+.box-item.active {
+  border: 1px solid #5DB03A;
+}
+
+.box-item.active .material-icons, .box-item.active span {
+  color: #5DB03A;
+}
+
+.box.first {
+  margin-bottom: 50px;
+}
+
+h6 {
+  margin-bottom: 10px;
+}
+

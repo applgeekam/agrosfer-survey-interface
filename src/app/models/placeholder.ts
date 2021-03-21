@@ -23,33 +23,86 @@ export const SurveyListItems = [
 ];
 
 
-// export const ToolBoxItem = {
-//   forms : [
-//     {
-//       name : 'New Form',
-//       logo: 'insert_drive_file',
-//     },
-//     {
-//       name : 'ID',
-//       logo: 'address-card',
-//     },
-//     {
-//       name : 'Adress',
-//       logo: 'place',
-//     },
-//     {
-//       name : 'Contact',
-//       logo: 'insert_drive_file'
-//     },
-//     {
-//       name : 'Skills',
-//       logo: 'insert_drive_file'
-//     },
-//   ],
-//   elements: [
-//   {
-//     name : 'Text',
-//     logo: ''
-//   }
-//   ]
-// };
+export const ToolBoxItem = {
+  forms : [
+    {
+      name : 'New Form',
+      logo: 'insert_drive_file',
+    },
+    {
+      name : 'ID',
+      logo: 'badge',
+    },
+    {
+      name : 'Adress',
+      logo: 'place',
+    },
+    {
+      name : 'Contact',
+      logo: 'contacts'
+    }
+  ],
+  elements: [
+    {
+      name : 'Text',
+      logo: 'text_fields'
+    },
+    {
+      name : 'Paragraph',
+      logo: 'view_headline'
+    },
+    {
+      name : 'Integer',
+      logo: 'pin'
+    },
+    {
+      name : 'Decimal',
+      logo: 'pin'
+    },
+    {
+      name : 'Phone number',
+      logo: 'dialpad'
+    },
+    {
+      name : 'E-mail',
+      logo: 'alternate_email'
+    },
+    {
+      name : 'Date',
+      logo: 'calendar_today'
+    },
+    {
+      name : 'Time',
+      logo: 'schedule'
+    },
+    {
+      name : 'Date and Time',
+      logo: 'event'
+    },
+    {
+      name : 'Checklist',
+      logo: 'checklist'
+    },
+    {
+      name : 'Radio Button',
+      logo: 'radio_button_checked'
+    },
+    {
+      name : 'Image',
+      logo: 'insert_photo'
+    },
+    {
+      name : 'Audio',
+      logo: 'audiotrack'
+    },
+    {
+      name : 'Video',
+      logo: 'movie'
+    },
+    {
+      name : 'Price',
+      logo: 'price_change'
+    },
+
+  ]
+};

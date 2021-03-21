@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ToolBoxItem} from '../../models/placeholder';
 
 @Component({
   selector: 'app-servey-tool-box',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servey-tool-box.component.css']
 })
 export class ServeyToolBoxComponent implements OnInit {
+  toolItems = ToolBoxItem;
 
   constructor() { }
 

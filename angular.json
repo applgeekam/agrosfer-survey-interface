@@ -57,6 +57,8 @@
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
+              "src/assets/jquery-ui.min.js",
+              "src/assets/popper.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.js",
               "src/assets/portal.white.js"
             ]
