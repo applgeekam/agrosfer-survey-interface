@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {QuizModels} from '../../models/quiz.models';
 import {QuizService} from '../../service/quiz.service';
 import {SurveyModels} from '../../models/survey.models';
@@ -8,7 +8,7 @@ import {SurveyModels} from '../../models/survey.models';
   templateUrl: './servey-builder.component.html',
   styleUrls: ['./servey-builder.component.css']
 })
-export class SurveyBuilderComponent implements OnInit {
+export class SurveyBuilderComponent implements OnInit, OnDestroy {
   quiz: QuizModels[] = [];
   quizSubscription: any;
 
@@ -26,11 +26,13 @@ export class SurveyBuilderComponent implements OnInit {
     const quiz = new QuizModels(id, 'Quiz ' + id, '');
     this.quizService.addQuiz(quiz);
   }
-
-  removeQuiz(survey: SurveyModels): void {
+  removeQuiz(survey: QuizModels): void {
     const quizToRemove = this.quiz.findIndex((item: QuizModels) => {
       return item === survey;
     });
     this.quizService.removeQuiz(quizToRemove);
+  }
+  ngOnDestroy(): void {
+    this.quizSubscription.unsubscribe();
   }
 }

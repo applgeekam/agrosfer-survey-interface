@@ -15,7 +15,7 @@ export class SurveyService {
   constructor() { }
 
   emitSurveys(): any {
-    this.surveysSubject.next(this.surveys);
+    this.surveysSubject.next(this.surveys.slice());
   }
 
 }

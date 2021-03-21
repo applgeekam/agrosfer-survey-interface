@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {SurveyModels} from '../../models/survey.models';
 
 @Component({
   selector: 'app-survey-list-item',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SurveyListItemComponent implements OnInit {
 
+  @Input() item: SurveyModels = new SurveyModels('', '');
   constructor() { }
 
   ngOnInit(): void {
+  }
+  formatInDate(text: string | Date): Date {
+    return new Date(text);
   }
 
 }

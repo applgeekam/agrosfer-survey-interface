@@ -1,4 +1,4 @@
 export class SurveyModels {
-  constructor(public name: string, update: Date ) {
+  constructor(public name: string, public  update: Date | string ) {
   }
 }

@@ -6,7 +6,7 @@
 .material-icons {
   margin-right: 0;
   display: block;
-  font-size: 42px;
+  font-size: 32px;
   margin-bottom: 5px;
   padding-right: 0;
   text-indent: 0;
@@ -15,23 +15,17 @@
 }
 
 
-.sw-toc-link {
-  border-bottom: 1px solid #b2b9bd61 !important;
-}
 
 .sw-toc-item.active .sw-toc-link, .sw-toc-item.active .material-icons {
   color: #72777a !important;
 }
 
-.sw-toc-item.active .sw-toc-link {
-  border-bottom: 1px solid #72777a9e  !important;
-}
 
 .sw-toc-link-text {
   display: block !important;
   font-size: 0.8em !important;
   text-indent: 0;
-  color: #72777a91 ;
+  color: #72777ac7 ;
 }
 
 .collapse {
@@ -41,8 +35,10 @@
 .copyright {
   position: absolute;
   bottom: 20px;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  margin-left: 5px;
   font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
 }
 
 

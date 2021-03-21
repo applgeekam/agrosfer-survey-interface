@@ -1,24 +1,27 @@
 <div class="card">
   <div class="card-header">
-    Featured
+    Survey List
     <button type="button" class="btn btn-link move">
       <span class="material-icons">add_circle</span>
     </button>
   </div>
   <div class="card-body">
-    <form>
-      <div class="form-group">
-        <div class="input-group">
-          <span class="input-group-addon material-icons">search</span>
-          <input type="text" class="form-control" placeholder="Rechercher" aria-label="Search">
+    <div class="form-group">
+      <div class="input-group">
+        <span class="input-group-addon material-icons">search</span>
+        <input type="text" class="form-control" placeholder="Rechercher" aria-label="Search" [disabled]="surveys.length === 0 && onSearchLoading === false" [(ngModel)]="searched" (ngModelChange)="refresh()">
+      </div>
+    </div>
+    <div class="list-survey">
+      <div class="list-item-survey">
+        <app-survey-list-item *ngFor="let survey of surveys" [item] = "survey"></app-survey-list-item>
+        <div *ngIf="surveys.length === 0 && onSearchLoading === true" class="alert alert-warning" role="alert">
+          Oops... There is no survey name which match with your research.
+        </div>
+        <div *ngIf="surveys.length === 0 && onSearchLoading === false" class="alert alert-light" role="alert">
+          You don't have any survey yet.
         </div>
       </div>
-      <div class="list-survey">
-        <div class="list-item-survey">
-          <app-survey-list-item></app-survey-list-item>
-          <app-survey-list-item></app-survey-list-item>
-        </div>
-      </div>
-    </form>
+    </div>
   </div>
 </div>
