@@ -1,4 +1,4 @@
-<div class="col-11 quiz">
+<div class="col-md-11 quiz">
   <div class="title">
     {{ item.name }}
   </div>
@@ -7,7 +7,7 @@
     Please, drag and drop in this area your desirate elements or template to constitute your quiz...
   </div>
 </div>
-<div class="col-1 options">
+<div class="col-md-1 options">
   <div>
     <span class="material-icons add" (click)="addQuiz()">add_circle_outline</span>
     <span class="material-icons del" (click)="removeQuiz()" [class.disabled] = "!canDelete()" >delete</span>

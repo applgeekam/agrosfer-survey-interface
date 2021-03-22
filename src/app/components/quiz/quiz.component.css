@@ -19,7 +19,7 @@
 }
 
 .options div span {
-  margin: 10px 0;
+  margin: 12px 0;
   cursor: pointer;
 }
 
@@ -51,4 +51,26 @@
 
 .del.disabled {
   color: #72777a8c !important;
+}
+
+
+@media (max-width: 720px) {
+  .options div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .options div span {
+    margin: 12px 14px;
+  }
+
+  .options {
+    padding: 0;
+  }
+
 }

@@ -1,4 +1,11 @@
-<body>
+<div class="root">
   <app-header></app-header>
   <app-survey></app-survey>
-</body>
+  <div class="loader" [class] = "{ hide: !loading }">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="spinner-grow" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+</div>

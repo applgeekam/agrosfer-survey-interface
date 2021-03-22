@@ -1,6 +1,7 @@
 
-.sw-sidebar ul {
+ ul {
   overflow-x: hidden;
+  margin-top: 20px;
 }
 
 .material-icons {
@@ -16,6 +17,8 @@
 
 #sidebar {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .sw-toc-item.active .sw-toc-link, .sw-toc-item.active .material-icons {
@@ -35,15 +38,32 @@
 }
 
 .copyright {
-  position: absolute;
-  bottom: 0px;
-  font-size: 0.7em;
+  margin-top: auto;
+  margin-bottom: 20px;
+  font-size: 0.8em;
   margin-left: 5px;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
 }
 
-
 .copyright span {
   display: block;
 }
+
+ @media (max-width: 576px) {
+   .sw-toc-link-text {
+     display: none !important;
+   }
+
+   .copyright span {
+     transform-origin: top left;
+     transform: rotate(
+       -90deg
+     ) translate(-100%);
+     margin-top: -50%;
+     white-space: nowrap;
+     position: relative;
+     left: 2px;
+     font-size: 1.3em;
+   }
+ }

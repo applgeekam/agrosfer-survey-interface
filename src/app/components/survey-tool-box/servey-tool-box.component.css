@@ -12,6 +12,7 @@
   cursor: pointer;
   min-width: 90px;
   z-index: 10000;
+  box-shadow: 0 0 3px 0 rgb(114 119 122 / 28%);
 }
 
 .box-item span {

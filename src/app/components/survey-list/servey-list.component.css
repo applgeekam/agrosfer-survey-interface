@@ -17,4 +17,6 @@
   font-size: 29px;
 }
 
-
+.card {
+  box-shadow: 0 0 12px 0 rgba(114, 119, 122, 0.28);
+}

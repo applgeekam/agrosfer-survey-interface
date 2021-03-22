@@ -1,24 +1,44 @@
 main {
   width: 100%;
+  margin-top: 20px;
 }
 
 main .sw-title {
   text-decoration: underline;
   font-size: x-large;
   font-weight: 450;
+  margin-bottom: 15px;
 }
 
 .sw-sidebar.active {
   min-width: 86px !important;
   position: unset;
-  height: auto;
+  box-shadow: 0 0 22px 0 rgba(114, 119, 122, 0.28);
+  height: unset !important;
 }
 
 .flex-xl-nowrap {
   flex-wrap: inherit !important;
 }
 
+.survey-list, .survey-tool-box {
+  padding-bottom: 50px;
+}
 
+@media (max-width: 576px) {
+  .sw-sidebar.active {
+    max-width: 70px !important;
+    min-width: 70px !important;
+    margin-right: 20px;
+  }
 
+  .mg10 {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 
-
+  .mg20 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
